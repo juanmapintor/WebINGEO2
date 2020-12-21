@@ -27,7 +27,7 @@ document.getElementById('searchBtn2').addEventListener('click', () => {
     if(searchInputs[1].value)window.location.href = '?search='+searchInputs[1].value;
 });
 
-window.onload = () => {
+function navBehaviourHighlight() {
     let query = window.location.search;
     let urlParams = new URLSearchParams(query);
     let place = urlParams.get('place');
@@ -55,11 +55,13 @@ window.onload = () => {
             document.getElementById('contactLink2').setAttribute('style', 'font-weight: 800;')
         break;
     }
-};
+}
+
 
 const btnBurger = document.querySelector('.btnBurger');
 const mobileNavBar = document.querySelector('.mobileNavBar');
 let menuOpen = false;
+
 btnBurger.addEventListener('click', () => {
     let saveScrollTop =  document.documentElement.scrollTop;
     if(!menuOpen) {
@@ -77,6 +79,7 @@ btnBurger.addEventListener('click', () => {
 
 let expand = document.querySelectorAll('.expand');
 let dropItem = document.querySelectorAll('.dropItem');
+
 for(let i = 0; i < expand.length; i++){
     let open = false;
     expand[i].addEventListener('click', () =>{

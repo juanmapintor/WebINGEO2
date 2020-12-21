@@ -5,8 +5,10 @@ let mobileQuery = window.matchMedia('(max-width: 1050px)');
 let i = 1;
 let xStart = 0;
 
+
+
 function setHeight(query){
-    if(query.matches) {
+    if(query.matches && getDeviceType()=='mobile') {
         resize();
         window.addEventListener('resize', resize);
     } else {

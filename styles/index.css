@@ -41,6 +41,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+ 
+
 
 @media (min-width: 1200px) {
     .container{
@@ -54,10 +56,6 @@ body {
 
     .articles {
         flex: 1;
-    }
-
-    .news {
-        flex-direction: row;
     }
 }
 
