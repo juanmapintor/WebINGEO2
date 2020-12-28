@@ -135,9 +135,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.expand.open {
-    transform: rotate(180deg);
-}
+
 
 .dropItem {
     margin-left: 30px;

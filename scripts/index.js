@@ -11,11 +11,15 @@ const getDeviceType = () => {
       return "mobile";
     }
     return "desktop";
-  };
+};
 
-let firstItems = document.querySelectorAll('.listItemFirst');
+window.onload = () =>{
+  navBehaviour();
+  carouselBehaviour();
+  newsBehaviour();
+  articlesBehaviour();
+};
 
-window.onload = function(){
-    navBehaviourHighlight();
-    console.log('asdasd');
+window.onscroll = () => {
+  scrollBehaviour();
 };

@@ -3,7 +3,7 @@
 
 :root {
     --header-background: #2B3843;
-    --exct-orange: #fc8c2a;
+    --exct-orange: rgb(252, 140, 42);
     --ingeo-brown: #a87648;
 }
 html, body {
@@ -41,7 +41,32 @@ body {
     display: flex;
     flex-direction: column;
 }
- 
+
+.articles {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--header-background);
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer > a > img {
+    height: 80%;
+    opacity: 0.5;
+}
 
 
 @media (min-width: 1200px) {
@@ -57,6 +82,7 @@ body {
     .articles {
         flex: 1;
     }
+
 }
 
 
