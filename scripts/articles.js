@@ -19,7 +19,7 @@ function articlesBehaviour() {
 
     function mobileCheck() {
         if(getDeviceType()!='mobile' && articleQueryMax.matches && !articleQueryMin.matches){
-            articleContainter.setAttribute('style', 'flex-direction: row; flex-wrap: wrap;')
+            articleContainter.setAttribute('style', 'flex-direction: row; flex-wrap: wrap; justify-content: center;')
             articles.forEach((element) => {
                 element.setAttribute('style', 'min-width: 30%;');
             });
