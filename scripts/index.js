@@ -13,7 +13,12 @@ const getDeviceType = () => {
     return "desktop";
 };
 
-window.onload = () =>{
+const getParameterByName = (name) => {
+  let params = new URLSearchParams(location.search);
+  return params.get(name);
+};
+
+window.onload = () => {
   navBehaviour();
   carouselBehaviour();
   newsBehaviour();

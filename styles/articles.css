@@ -1,13 +1,13 @@
 .articles {
     flex-direction: column;    
-    margin: 0;
+    margin: 0px 0px 0px 8px;
+    
 }
 
 .articles > h2 {
     font-family: 'Open Sans', sans-serif;
     color: var(--header-background);
     margin: 0;
-    margin-left: 8px;
     margin-top: 8px;
     width: 100%;
     min-width: 100%;
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 8px;
+    margin: 8px 8px 8px 0px;
     border-radius: 15px;
     overflow: hidden;
 }

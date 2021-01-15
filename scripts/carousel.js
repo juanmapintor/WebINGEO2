@@ -58,7 +58,7 @@ function carouselBehaviour() {
     });
     carouselFrame.addEventListener('touchstart', (event) => {
         xStart = event.changedTouches[0].clientX;
-    });
+    }, {passive: true});
     carouselFrame.addEventListener('touchend', (event) => {
         if (event.changedTouches[0].clientX > xStart) {
             scrollPrev();

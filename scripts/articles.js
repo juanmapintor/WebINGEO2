@@ -39,7 +39,4 @@ function articlesBehaviour() {
     onResize();
 
     window.addEventListener('resize', onResize);
-
-
-
 }
