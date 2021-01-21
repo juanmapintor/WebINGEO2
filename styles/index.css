@@ -50,11 +50,11 @@ body {
 .footer {
     display: flex;
     background-color: var(--header-background);
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     margin: 0;
-    padding: 0;
+    padding: 0 16px;
 }
 
 .footer > a {
